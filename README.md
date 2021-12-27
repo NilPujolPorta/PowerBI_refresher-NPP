@@ -4,7 +4,7 @@
 - Requeriments a requirements.txt.
 - El fitxer compilar.bat transforma el .py en .pyc que es mes eficient i rapid.
 - Executar amb opcio -h per veure mes opcions i funcionalitats.
-##Instal·lació
+## Instal·lació
 - Utilitzant `pip`
 `pip install PowerBI_refresher-NPP`
 ## Ús
