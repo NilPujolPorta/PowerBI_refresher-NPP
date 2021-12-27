@@ -6,7 +6,9 @@
 - Executar amb opcio -h per veure mes opcions i funcionalitats.
 ## Instal·lació
 - Utilitzant `pip`
-`pip install PowerBI_refresher-NPP`
+```
+pip install PowerBI_refresher-NPP
+```
 ## Ús
 - Executar el fitxer `refresh.py` o `refresh.cpython-39.pyc` amb les opcions adients
 
