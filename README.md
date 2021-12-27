@@ -6,7 +6,7 @@
 - Executar amb opcio -h per veure mes opcions i funcionalitats.
 
 ## Ús
-- Executar el fitxer `synology_API.py` o `synology_API.cpython-39.pyc` amb les opcions adients. Llavors les dades es guardaran a `dadesSynology.json` i si la opcio de excel esta activada tambe es guardara a `revisio_copies_seguretat_synology_vs1.xlsx`
+- Executar el fitxer `refresh.py` o `refresh.cpython-39.pyc` amb les opcions adients
 
 - Opcions
 ```
