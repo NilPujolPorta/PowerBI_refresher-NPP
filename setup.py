@@ -7,7 +7,7 @@ setup(name='PowerBI_refresher-NPP',
       author='Nil Pujol Porta',
       author_email='nilpujolporta@gmail.com',
       license='GNU',
-      packages=['PowerBI_refresher-NPP'],
+      packages=['refresher'],
       install_requires=[
           'pywinauto',
           'psutil',
@@ -15,6 +15,8 @@ setup(name='PowerBI_refresher-NPP',
           'argparse',
           'time',
           'os',
+          "setuptools>=42",
+          "wheel",
           'sys'
       ],
 	  entry_points = {
