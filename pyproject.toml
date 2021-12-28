@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "argparse",
+    "pywinauto",
+    "keyboard",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
