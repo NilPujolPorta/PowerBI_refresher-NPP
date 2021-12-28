@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='PowerBI_refresher-NPP',
-      version='1.0',
+      version='1.1.1',
       description='Script for refreshing and publishing Power BI workbooks',
       url='https://github.com/NilPujolPorta/PowerBI_refresher-NPP',
       author='Nil Pujol Porta',
@@ -13,11 +13,8 @@ setup(name='PowerBI_refresher-NPP',
           'psutil',
           'keyboard',
           'argparse',
-          'time',
-          'os',
           "setuptools>=42",
-          "wheel",
-          'sys'
+          "wheel"
       ],
 	  entry_points = {
         "console_scripts": ['PowerBI_refresher-NPP = refresher.refresh:main']

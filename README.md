@@ -7,7 +7,7 @@
 ## Instal·lació
 - Utilitzant `pip`
 ```
-pip install PowerBI_refresher-NPP
+pip install PowerBI-refresher-NPP
 ```
 ## Ús
 - Executar el fitxer `refresh.py` o `refresh.cpython-39.pyc` amb les opcions adients
