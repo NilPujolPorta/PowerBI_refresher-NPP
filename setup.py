@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='PowerBI_refresher-NPP',
-      version='1.1.2',
+      version='1.1.3',
       description='Script for refreshing and publishing Power BI workbooks',
       long_description="""
 # PowerBI_Refresher-NPP
