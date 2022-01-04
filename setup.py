@@ -49,6 +49,6 @@ optional arguments:
           "wheel"
       ],
 	  entry_points = {
-        "console_scripts": ['PowerBI_refresher-NPP = refresher.refresh:main']
+        "console_scripts": ['PowerBI_refresher-NPP = refresher.refresher:main']
         },
       zip_safe=False)
