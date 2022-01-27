@@ -13,7 +13,7 @@ pip install PowerBI-refresher-NPP
 
 ## Ús
 - A la linea de commandes `PowerBI-refresher-NPP [opcions]`
-- ```python -m refresher [opcions]``
+- ```python -m refresher [opcions]```
 - ```./synology_API-runner.py [opcions]```
 - Executar el fitxer `refresh.py [opcions]`, `refresh.cpython-39.pyc [opcions]` o `./synology_API-runner.py [opcions]`
 

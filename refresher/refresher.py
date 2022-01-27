@@ -7,9 +7,11 @@ from pywinauto.application import Application
 import keyboard
 import yaml
 
-__version__ = "1.1.7"
+__version__ = "1.1.8"
 def main(args):
     ruta = os.path.dirname(os.path.abspath(__file__))
+    if not(os.path.exists(ruta+"/config")):
+        os.mkdir(ruta+"/config")
     if not(exists(ruta+"/config/config.yaml")):
         print("Emplena el fitxer de configuracio de Base de Dades a config/config.yaml")
         article_info = [
