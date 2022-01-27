@@ -25,7 +25,7 @@ def main():
     parser = argparse.ArgumentParser(description='Serveix per actualitzar dashboard de PowerBI desktop localment.')
     parser.add_argument("--init-wait", help = "temps d'espera d'obertura del PowerBI. Per defecte es 60 segons.", default = 60, type = int, metavar="NUM_SEC")
     parser.add_argument("--refresh-wait", help = "Temps d'espera despres de actualitzar. Per defecte es 60 segons.", default = 60, type = int, metavar="NUM_SEC")
-    parser.add_argument('-f', '--file', help='Especificar la ruta del fitxer a actualitzar. Per defecte es: ../../powerBI/apis.pbix', default=data[0]['fitxer.pbix'], metavar="RUTA")
+    parser.add_argument('-f', '--file', help='Especificar la ruta del fitxer a actualitzar. Per defecte es: '+ data[0]['fitxer.pbix'], default=data[0]['fitxer.pbix'], metavar="RUTA")
     parser.add_argument('-q', '--quiet', help='Nomes mostra els errors i el missatge de acabada per pantalla.', action="store_false")
     parser.add_argument('-v', '--versio', help='Mostra la versio', action='version', version='refresh-PowerBI v'+__version__)
     args = parser.parse_args()
