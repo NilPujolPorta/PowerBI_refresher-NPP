@@ -7,8 +7,8 @@ from pywinauto.application import Application
 import keyboard
 import yaml
 
-__version__ = "1.1.5"
-def main():
+__version__ = "1.1.6"
+def main(args):
     if not(exists("config/config.yaml")):
         print("Emplena el fitxer de configuracio de Base de Dades a config/config.yaml")
         article_info = [
@@ -28,7 +28,7 @@ def main():
     parser.add_argument('-f', '--file', help='Especificar la ruta del fitxer a actualitzar. Per defecte es: '+ data[0]['fitxer.pbix'], default=data[0]['fitxer.pbix'], metavar="RUTA")
     parser.add_argument('-q', '--quiet', help='Nomes mostra els errors i el missatge de acabada per pantalla.', action="store_false")
     parser.add_argument('-v', '--versio', help='Mostra la versio', action='version', version='refresh-PowerBI v'+__version__)
-    args = parser.parse_args()
+    args = parser.parse_args(args)
 
 
 
