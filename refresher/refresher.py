@@ -7,7 +7,7 @@ from pywinauto.application import Application
 import keyboard
 import yaml
 
-__version__ = "1.1.4"
+__version__ = "1.1.5"
 def main():
     if not(exists("config/config.yaml")):
         print("Emplena el fitxer de configuracio de Base de Dades a config/config.yaml")
