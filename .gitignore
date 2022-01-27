@@ -3,3 +3,4 @@ dist
 PowerBI_refresher_NPP.egg-info
 publish.bat
 tests
+refresher/compilar.bat

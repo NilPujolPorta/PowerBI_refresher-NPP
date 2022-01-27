@@ -4,19 +4,24 @@
 - Requeriments a requirements.txt.
 - El fitxer compilar.bat transforma el .py en .pyc que es mes eficient i rapid.
 - Executar amb opcio -h per veure mes opcions i funcionalitats.
+
 ## Instal·lació
 - Utilitzant `pip`
 ```
 pip install PowerBI-refresher-NPP
 ```
+
 ## Ús
-- Executar el fitxer `refresh.py` o `refresh.cpython-39.pyc` amb les opcions adients
+- A la linea de commandes `PowerBI-refresher-NPP [opcions]`
+- ```python -m refresher [opcions]``
+- ```./synology_API-runner.py [opcions]```
+- Executar el fitxer `refresh.py [opcions]`, `refresh.cpython-39.pyc [opcions]` o `./synology_API-runner.py [opcions]`
 
-- Opcions
+### Opcions
 ```
-usage: refresh.cpython-39.pyc [-h] [--init-wait NUM_SEC] [--refresh-wait NUM_SEC] [-f RUTA] [-q] [-v]
+usage: PowerBI-refresher-NPP [-h] [--init-wait NUM_SEC] [--refresh-wait NUM_SEC] [-f RUTA] [-q] [-v]
 
-Serveix per actualitzar dashboard de PowerBI desktop localment.
+Serveix per actualitzar localment un document en PowerBI desktop.
 
 optional arguments:
   -h, --help            show this help message and exit
