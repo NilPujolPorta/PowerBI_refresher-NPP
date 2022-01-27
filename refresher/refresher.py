@@ -7,19 +7,20 @@ from pywinauto.application import Application
 import keyboard
 import yaml
 
-__version__ = "1.1.6"
+__version__ = "1.1.7"
 def main(args):
-    if not(exists("config/config.yaml")):
+    ruta = os.path.dirname(os.path.abspath(__file__))
+    if not(exists(ruta+"/config/config.yaml")):
         print("Emplena el fitxer de configuracio de Base de Dades a config/config.yaml")
         article_info = [
             {
-            'fitxer.pbix' : '../../powerBI/apis.pbix',
+            'fitxer.pbix' : ruta+"/apis.pbix",
             }
         ]
-        with open("config/config.yaml", 'w') as yamlfile:
+        with open(ruta+"/config/config.yaml", 'w') as yamlfile:
             data = yaml.dump(article_info, yamlfile)
 
-    with open("config/config.yaml", "r") as yamlfile:
+    with open(ruta+"/config/config.yaml", "r") as yamlfile:
         data = yaml.load(yamlfile, Loader=yaml.FullLoader)
     
     parser = argparse.ArgumentParser(description='Serveix per actualitzar dashboard de PowerBI desktop localment.')
