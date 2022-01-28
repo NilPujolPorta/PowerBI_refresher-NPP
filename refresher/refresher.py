@@ -8,7 +8,7 @@ import keyboard
 import yaml
 
 __version__ = "1.1.8"
-def main(args):
+def main(args=None):
     ruta = os.path.dirname(os.path.abspath(__file__))
     if not(os.path.exists(ruta+"/config")):
         os.mkdir(ruta+"/config")
