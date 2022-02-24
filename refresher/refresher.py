@@ -6,8 +6,9 @@ import argparse
 from pywinauto.application import Application
 import keyboard
 import yaml
+import psutil
 
-__version__ = "1.1.8"
+__version__ = "1.1.9"
 def main(args=None):
     ruta = os.path.dirname(os.path.abspath(__file__))
     if not(os.path.exists(ruta+"/config")):
@@ -37,7 +38,11 @@ def main(args=None):
 
     workbook = args.file
     PROCNAME = "PBIDesktop.exe"
-
+    for proc in psutil.process_iter():
+		# check whether the process name matches
+        if proc.name() == PROCNAME:
+            proc.kill()
+    time.sleep(3)
     if args.quiet:
         print("Obrint el document")
     os.system('start "" "' + workbook + '"')
